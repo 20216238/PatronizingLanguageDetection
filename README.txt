@@ -13,6 +13,8 @@
 
 Hi and welcome to our groups submission for Group J for Data mining and Machine Learning part 2 of NCI's postgraduate program.
 
+Find the accompanying presentation here:- https://studentncirl-my.sharepoint.com/:v:/g/personal/x20216220_student_ncirl_ie/EWSYpHFInn9AjFkmkP-RBsgBsU-rgTSGJ8UfOL-r8SPkFg?email=x20216238%40student.ncirl.ie
+
 Do complete the tasks mentioned in SemEval please clone the above repository. Each notebook is self contained and should run without local function calls. 
 
 In the notebook ExploratoryAnalysis.ipynb, an exploratory analysis of the words contained in the task is contained, and a breakdown of the binary PCL values is completed against the text
