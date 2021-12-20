@@ -11,51 +11,16 @@
 					# Organizers email: semeval2022.task4.pcldetection@gmail.com                #
 					#############################################################################
 
-This README.txt file describes the dataset "Don't Patronize Me! An Annotated Dataset with Patronizing and Condescending Language towards Vulnerable Communities", an annotated corpus with PCL (Patronizing and Condescending Language) in the newswire domain. The dataset consists of the following files:
+Hi and welcome to our groups submission for Group J for Data mining and Machine Learning part 2 of NCI's postgraduate program.
 
--- README.txt
--- dontpatronizeme_pcl.tsv *
--- dontpatronizeme_categories.tsv *
+Do complete the tasks mentioned in SemEval please clone the above repository. Each notebook is self contained and should run without local function calls. 
 
-* Please note that both files have a Disclaimer at the top. The actual data starts at line 5 for both files.
+In the notebook ExploratoryAnalysis.ipynb, an exploratory analysis of the words contained in the task is contained, and a breakdown of the binary PCL values is completed against the text
 
-where
+The notebook CNN_RNN_SVM_Bert_Group_J.ipynb contains the CNN, RNN and SVM training algorithms. 
 
--- README.txt is this file.
+The notebook PatronizeUsBertModelAlphaTraining.ipynb, the layout of training the inital paramaters of a Bert model is established. Unfortunatley, this model may have to be trained on advanced servers, and may fail for local desktops due to the scope of Bert tokenization. 
 
--- dontpatronizeme_pcl.tsv contains paragraphs annotated with a label from 0 (not containing PCL) to 4 (being highly patronizing or condescending) towards vulnerable communities.
-It contains one instance per line with the following format:
+The notebook PatronizeUsBertModelBetaTrainingTask1.ipynb contains the workings to fine-tune a pre-tokenized bert model, which should achieve high accuracies and f1 scores on the pcl training data. 
 
-	- <doc-id> <tab> <keyword> <tab> <country-code> <tab> <paragraph> <tab> <label>
-
-	where
-
-	- <doc-id> is the document id in the original NOW corpus (News on Web: https://www.english-corpora.org/now/).
-	- <keyword> is the search term used to retrieve texts about a target community.
-	- <country-code> is a two-letter ISO Alpha-2 country code for the source media outlet.
-	- <paragraph> is the paragraph containing the keyword.
-	- <label> is an integer between 0 and 4. Each paragraph has been annotated by two annotators as 0 (No PCL), 1 (borderline PCL) and 2 (contains PCL). The combined annotations have been used in the following graded scale:
-
-	0 -> Annotator 1 = 0 AND Annotator 2 = 0
-	1 -> Annotator 1 = 0 AND Annotator 2 = 1 OR Annotator 1 = 1 AND Annotator 2 = 0
-	2 -> Annotator 1 = 1 AND Annotator 2 = 1
-	3 -> Annotator 1 = 1 AND Annotator 2 = 2 OR Annotator 1 = 2 AND Annotator 2 = 1
-	4 -> Annotator 1 = 2 AND Annotator 2 = 2
-
-	The experiments reported in the paper consider the following tag grouping: 
-	- {0,1}   = No PCL
-	- {2,3,4} = PCL
-
--- dontpatronizeme_categories.tsv is the *PCL multilabel classification* dataset. It contains one instance per line with the following format:
-
-	- <doc-id> <tab> <paragraph> <tab> <keyword> <tab> <country-code> <tab> <span-start> <tab> <span-end> <tab> <span-text> <tab> <pcl-category> <tab> <number-of-annotators>
-
-	- <doc-id> is the document id in the original NOW corpus (News on Web: https://www.english-corpora.org/now/).
-	- <paragraph> is the paragraph containing the keyword.
-	- <keyword> is the search term used to retrieve texts about a target community.
-	- <country-code> is a two-letter ISO Alpha-2 country code for the source media outlet.
-	- <start> is the start character position of the span identified as pcl.
-	- <end> is the end character position of the span identified as pcl.
-	- <span> is the span identified as pcl.
-	- <pcl-category> is the pcl category of the <span> at position <paragraph>[<start>:<end>]
-	- <number-of-annotators> is the number of annotators agreeing on that label (1 or 2).
+The last notebook,BertModelTask2FineTuning.ipynb, looks at fine-tuning the bert model for the second SemEval Task 2. 
