@@ -24,3 +24,7 @@ The notebook PatronizeUsBertModelAlphaTraining.ipynb, the layout of training the
 The notebook PatronizeUsBertModelBetaTrainingTask1.ipynb contains the workings to fine-tune a pre-tokenized bert model, which should achieve high accuracies and f1 scores on the pcl training data. 
 
 The last notebook,BertModelTask2FineTuning.ipynb, looks at fine-tuning the bert model for the second SemEval Task 2. 
+
+GitHub link for the code can be found at https://github.com/kevinTheQuigley/pleasePatronizeUs 
+
+So long thanks for all the fish! 
