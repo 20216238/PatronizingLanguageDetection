@@ -25,6 +25,8 @@ The notebook PatronizeUsBertModelBetaTrainingTask1.ipynb contains the workings t
 
 The last notebook,BertModelTask2FineTuning.ipynb, looks at fine-tuning the bert model for the second SemEval Task 2. 
 
+As part of this project, work was completed by all members of the team equally.
+
 GitHub link for the code can be found at https://github.com/kevinTheQuigley/pleasePatronizeUs 
 
 So long thanks for all the fish! 
